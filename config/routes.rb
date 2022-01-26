@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'images/index'
   get 'books/index'
   get 'books/new'
   get 'books/create'

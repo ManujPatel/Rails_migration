@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2022_01_27_063447) do
     t.decimal "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "author_id", null: false
+    t.integer "author_id"
     t.integer "index"
     t.index ["author_id"], name: "index_books_on_author_id"
   end
@@ -42,5 +42,4 @@ ActiveRecord::Schema.define(version: 2022_01_27_063447) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "books", "authors"
 end

@@ -4,7 +4,7 @@
     Email: <%=@author.email%><%= @author.email%>
 </h2> 
 <%= button_to "Destroy Author", author_path, method: :delete %>
-
+<h3>Books written by this author:</h3>
 <ul>
     <%= @book.name %>    
 </ul>

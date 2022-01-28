@@ -1,0 +1,10 @@
+<h1><%= @author.first_name%>'s Page</h1>
+<h2>Name: <%=@author.first_name%><%= @author.last_name%> <br>
+    Date_Of_Birth: <%=@author.date_of_birth%><%= @date_of_birth%><br>
+    Email: <%=@author.email%><%= @author.email%>
+</h2> 
+<%= button_to "Destroy Author", author_path, method: :delete %>
+<h3>Books written by this author:</h3>
+<ul>
+    <%= @book.name %>    
+</ul>

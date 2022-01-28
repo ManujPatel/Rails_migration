@@ -1,0 +1,16 @@
+<h1>Authors#index</h1>
+<%= button_to "Add New Author", new_author_path, method: :get %>
+<%= button_to "Add New Book", new_book_path, method: :get %>
+<h2>Authors:</h2>
+<ul>
+    <% @authors.each do |author|%>
+        <li><%= link_to author.first_name, author_path(author)%></li>
+    <%end%>    
+</ul>
+
+
+
+
+
+
+<p>Find me in app/views/authors/index.html.erb</p>
